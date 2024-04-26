@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logi and Register Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div id="tabs">
+            <p id="lt" class="tabs" onclick="logintab()">Log in</p>
+            <p id="rt" class="tabs" onclick="regtab()">Register</p>
+        </div>
+
+        <div class="scont">
+            <div id="login" class="comm">
+                <h1 class="l1">Login pages</h1>
+                <input type="email" placeholder="Enter your Email" id="se" required>
+                <input type="password" placeholder="Enter your password" id="sp" required>
+                <input type="submit" value="Sumbit" onclick="login()" placeholder="Submit" />
+                <a href="#" class="for" onclick="forgot()">Forget password?</a>
+            </div>
+
+            <div id="register" class="comm">
+                <h1 class="r1">Register pages</h1>
+                <input type="email" placeholder="Enter your Email" id="re" required>
+                <input type="password" placeholder="Enter your password" id="rp" required>
+                <input type="password" placeholder="Enter your password" id="rrp" required>
+                <input type="submit" value="Submit" onclick="register()" placeholder="Submit" />
+            </div>
+
+            <div id="forgot" class="comm">
+                <h1 class="fp1">forgot pages</h1>
+                <input type="email" placeholder="Enter your Email" id="fe" required>
+                <input type="submit" value="Submit" onclick="forgotpass()" placeholder="Submit" />
+            </div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
